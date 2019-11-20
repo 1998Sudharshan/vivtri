@@ -1,0 +1,97 @@
+#include <iostream>
+using namespace std;
+
+class customer
+{
+    Char name[30]
+    int age;
+};
+
+
+void initialize(char name[])
+{
+    int count =0;
+    purchase();
+}
+
+void purchase()
+{
+    if(count == 0)
+    {
+        int choice;
+        cont ='y'
+        while(cont == 'y')
+        {
+           cout<<"\nEnter 0 to exit & 1 to purchase:";
+           cin>>choice;
+           if(choice == 1)
+           {
+
+             int n;
+             cout<<"Enter number of items you want to purchase:";
+             cin>>n;
+             char sel_items[n];
+             int qty[n],price[n];
+             list();
+             cout<<"Enter items that you want to purchase and quantity of that corresponding item:";
+             for(int i=0;i<n;i++)
+             {
+               cin>>sel_items[i];
+               cin>>qty[i];
+               cin>>price[i]
+             }
+
+             select(sel_items,n);
+             count = count+1;
+             cout<<"Want to continue(y/n):";
+             cin>>cont;
+
+         }
+
+         else if(choice == 0)
+         {
+            cout<<"Thanks for visiting! You're always welcomed";
+         }
+
+    }
+
+}
+
+void select(char sel_items[], int n)
+{
+    cout<<"Items purchased and total:";
+    for(int i=0;i<n;i++)
+    {
+
+        cout<<"Name:"<<sel_items[i]<<"Purchased Qty:"<<qty[i]<<"Price of product:"<<price[i];
+        cout<<"\n";
+    }
+
+    cout<<"Total amount:"<<calculation.price_cal_with_qty(sel_items);
+
+}
+
+
+void list();
+{
+
+    cout<<"Available items in our store";
+    char coll = ["key","value"];
+    map<char,char> coll;
+    while(grocery.listed_item)
+    {
+        cout<<"Product id:"<<key<<"name:"<<value[product]<<"Avail. qty:"<<value[quantity]<<"price per unit:"<<value[price];
+    }
+}
+
+
+
+int main()
+{
+    cout<<"Enter your name:";
+    cin>>name;
+    cout<<"Enter your age(Senior citizen will get disc.):";
+    cin>>age;
+    cust = customer.new(age,name);
+    cust.initialize(name)
+}
