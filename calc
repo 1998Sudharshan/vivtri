@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+class Calculation
+{
+    int cost;
+    int total;
+};
+
+
+int price_cal_with_qty(price, q, age, disc)
+{
+   int tot = 0;
+   int cost = price * q;
+    if (age > 60)
+      cost = cost - percent_of(offer_per, cost_per_product);
+    tot += cost;
+    return tot;
+}
+
+int percent_of(offer_per, cost)
+{
+    int p = cost * offer_per / 100;
+    return p;
+}
+
