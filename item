@@ -1,0 +1,91 @@
+#include <iostream>
+using namespace std;
+
+class grocery
+{
+    int prod_id[5];
+    char prod_name[5];
+    int disc[5];
+    int q[5];
+    int price[5]
+};
+
+void initialize()
+{
+    prod_id[] = {1,2,3,4,5};
+    prod_name[] = {'oil','chips','soap','softdrink','paste'};
+    disc[] = {5,5,10,5,10};
+    q[] = {50,70,50,60,40};
+    price[] = {15,10,25,18,20};
+    cust_cart[sel_items] = map<int,int> (price,q);
+}
+
+void listed_item()
+{
+    initialize();
+}
+
+void add_to_cart(char name,int age)
+{
+    cout<<"Enter product id to be selected:";
+    cin>>prod_id;
+    cust_prod(prod_id,age);
+
+}
+
+void cust_prod()
+{
+    if (cust_cart[sel_items].q == 0)
+       create_new_item_cart(sel_items, age);
+    else
+       update_customer_cart(sel_items, age);
+
+   cust_cart[sel_items] = Calculation.price_cal_with_qty(cust_cart[sel_items])
+   update_prod_quan(grocery.initialize(),cust_cart[sel_items])
+   return cust_cart
+}
+
+
+void create_new_item_cart(sel_items, age)
+{
+    for(int i=0;i<sel_items.size();i++)
+    {
+
+        char info[5][5];
+        info = cust_cart[sel_items].initialize();
+        cout<<info;
+        cust_cart[sel_items].price = Calculation.price_cal_with_qty(info[price], info[disc]);
+        update_prod_quan(grocery.initialize(),cust_cart[sel_items]);
+    }
+}
+
+void update_customer_cart(sel_items, age)
+{
+     for(int i=0;i<sel_items.size();i++)
+     {
+         if(cust_cart[sel_items].q == 0)
+         {
+            int np = 0;
+            info = cust_cart[sel_items].initialize();
+            cust_cart[sel_items].q += 1;
+            cust_cart[sel_items].price = Calculation.price_cal_with_qty(info[price], info[disc]);
+            np = np + cust_cart[sel_items].price;
+            update_prod_quan(grocery.initialize(),cust_cart[sel_items]);
+        }
+        else
+        {
+           create_new_item_cart(sel_items, age);
+        }
+     }
+
+}
+
+void update_prod_quan(grocery.initialize(),sel_items)
+{
+  initialize().q - = cust_cart[sel_items].price;
+  initialize().price - = cust_cart[sel_items].price;
+}
+
+
+
+
